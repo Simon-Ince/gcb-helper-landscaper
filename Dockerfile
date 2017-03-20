@@ -17,3 +17,5 @@ RUN tar -zxvf /tmp/${FILENAME} -C /tmp \
   && rm -rf /tmp
 
 RUN helm init --client-only
+
+RUN helm repo add soa-chart-repository https://soa-chart-repository.storage.googleapis.com
