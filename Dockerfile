@@ -16,4 +16,4 @@ RUN tar -zxvf /tmp/${FILENAME} -C /tmp \
   && mv /tmp/linux-amd64/helm /bin/helm \
   && rm -rf /tmp
 
-RUN helm init
+RUN helm init --client-only
